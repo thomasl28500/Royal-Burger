@@ -1,0 +1,19 @@
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+#navbarNav {
+    margin-right: 1rem;
+}
+
+nav {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.nav-link {
+    color: var(--blanc);
+}

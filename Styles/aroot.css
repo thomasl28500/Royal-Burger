@@ -1,0 +1,21 @@
+:root {
+    --jaune: #fac74a;
+    --rouge: #ff4242;
+    --gris: #292e33;
+    --blanc: #fff;
+}
+
+* {
+    color: var(--blanc);
+    font-family: "Rowdies", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--gris);
+}
+
+#zoneHaut {
+    background-color: var(--gris);
+}
