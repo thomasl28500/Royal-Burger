@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="img/logoRoyalBurger.png" class="logo" alt="">
+                    <img src="img/logoRoyalBurger.png" class="logo" alt="logo Royal Burger">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -49,7 +49,7 @@
             <div class="titre">
                 <h1>Royal Burger</h1>
                 <h2>Le goût qui règne en maître.</h2>
-                <a href="burgers.html">Voir la CARTE</a>
+                <a href="burgers.html">Voir le MENU</a>
             </div>
         </div>
         <div class="informations">
@@ -70,14 +70,99 @@
                 Service rapide
             </div>
         </div>
-        <div class="sous-titre">
-            <h3>Votre avis compte beaucoup !</h3>
-            <div class="hr"></div>
+        <div class="selection">
+            <div class="sous-titre">
+                <span class="icone"></span>
+                <h3><span class="left"></span>Notre sélection du moment !<span class="right"></span></h3>
+            </div>
+            <div class="description">
+                <p>Chez Royal Burger, nous vous proposons une large gamme de produits soigneusement élaborés à partir d’ingrédients de qualité. Burgers généreux, accompagnements savoureux et recettes originales : chaque produit est pensé pour vous offrir une expérience gourmande et satisfaisante. Découvrez dès maintenant notre sélection du moment, spécialement choisie pour mettre en avant nos incontournables et nos nouveautés.</p>
+            </div>
+            <div class="liste">
+                <div class="card">
+                    <h5>Royal Classic</h5>
+                    <hr>
+                    <div class="compositions">Pain burger brioché, steak haché 100 % pur bœuf, cheddar fondant, salade fraîche, tomates, oignons rouges, sauce burger maison.</div>
+                </div>
+                <div class="card">
+                    <h5>Bacon Cheese</h5>
+                    <hr>
+                    <div class="compositions">Pain brioché, steak haché pur bœuf, double cheddar, bacon croustillant, oignons caramélisés, sauce barbecue.</div>
+                </div>
+                <div class="card new">
+                    <h5>Chicken Crispy</h5>
+                    <hr>
+                    <div class="compositions">Pain brioché, filet de poulet pané croustillant, cheddar, salade iceberg, tomates, sauce mayonnaise épicée.</div>
+                </div>
+                <div class="card">
+                    <h5>Royal Spicy</h5>
+                    <hr>
+                    <div class="compositions">Pain brioché, steak haché pur bœuf, fromage pepper jack, jalapeños, oignons rouges, salade, sauce spicy maison.</div>
+                </div>
+            </div>
+        </div>
+        <div class="avis">
+            <div class="sous-titre">
+                <span class="icone"></span>
+                <h3><span class="left"></span>Votre avis compte beaucoup !<span class="right"></span></h3>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <div class="carousel-inner">
+                    <div class="card carousel-item active">
+                        <div class="img">
+                            <img src="img/avis/sarah.jpg" alt="Photo de profil Sarah">
+                        </div>
+                        <div class="etoiles">4/5</div>
+                        <div class="commentaire">Produits frais, burgers gourmands et équipe sympa. Peut-être un peu plus de sauce, mais sinon top.</div>
+                        <div class="nom">Sarah D.</div>
+                    </div>
+                    <div class="card carousel-item">
+                        <div class="img">
+                            <img src="img/avis/lucas.jpg" alt="Photo de profil Lucas">
+                        </div>
+                        <div class="etoiles">5/5</div>
+                        <div class="commentaire">Le Chicken Crispy est une tuerie ! Poulet bien croustillant et burger très équilibré. Rien à dire.</div>
+                        <div class="nom">Lucas M.</div>
+                    </div>
+                    <div class="card carousel-item">
+                        <div class="img">
+                            <img src="img/avis/frank.jpg" alt="Photo de profil Frank">
+                        </div>
+                        <div class="etoiles">4.5/5</div>
+                        <div class="commentaire">Franchement l’un des meilleurs burgers du coin. Portions généreuses et sauces délicieuses. J’y retourne souvent.</div>
+                        <div class="nom">Frank A.</div>
+                    </div>
+                    <div class="card carousel-item">
+                        <div class="img">
+                            <img src="img/avis/sofia.jpg" alt="Photo de profil Sofia">
+                        </div>
+                        <div class="etoiles">4.5/5</div>
+                        <div class="commentaire">Super découverte ! Le Bacon Cheese est incroyable, cuisson parfaite et bacon bien croustillant. Service rapide.</div>
+                        <div class="nom">Sofia L.</div>
+                    </div>
+                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
         </div>
     </div>
     <div id="zoneBas">
-
+        <div class="partenaires">  
+        </div>
     </div>
+
 </body>
 
 </html>

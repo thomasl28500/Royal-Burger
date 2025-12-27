@@ -81,9 +81,108 @@
     height: 3rem;
 }
 
+.selection .liste {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.selection .liste .card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: var(--grisFonce);
+    padding: .5rem 1rem;
+    padding-left: 8rem;
+    background-image: url(../img/burger-carte.png);
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+    background-position: -50px center;
+    max-height: 140px;
+    min-height: 140px;
+}
+
+.selection .liste .card.new::after {
+    content: '';
+    background-image: url('../img/bandeau-new.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 0px;
+    top: -4px;
+    right: -4px;
+    bottom: 0;
+    transform: rotate(270deg);
+}
+
+.selection .liste .card:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.selection .liste .card h5 {
+    font-family: "Permanent Marker", cursive;
+    color: var(--jaune);
+    margin: 0;
+}
+
+.selection .liste .card hr {
+    margin: .5rem 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--rouge);
+    opacity: 1;
+}
+
+.selection .liste .card .compositions {
+    font-size: .8rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#carouselExampleIndicators {
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+#carouselExampleIndicators .card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: var(--grisFonce);
+    color: var(--blanc);
+    padding: 2rem;
+}
+
+#carouselExampleIndicators .card .img {
+    text-align: center;
+}
+
+#carouselExampleIndicators .card img {
+    width: 200px;
+    border-radius: 6rem;
+}
+
+#carouselExampleIndicators .card:nth-child(odd) img {
+    border: 4px solid var(--jaune);
+}
+
+#carouselExampleIndicators .card:nth-child(even) img {
+    border: 4px solid var(--rouge);
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 576px) {
+
+    .selection .liste {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
     .informations .card {
         max-width: 230px;
@@ -120,6 +219,14 @@
 
 @media screen and (min-width: 992px) {
     
+    .selection .liste .card.new::after {
+        left: initial;
+        top: initial;
+        right: -4px;
+        bottom: 0;
+        transform: initial;
+    }
+
     .background img {
         min-height: 540px;
     }
@@ -157,6 +264,20 @@
 
     .background .titre a {
         display: block;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    .selection .liste {
+        margin: 2rem auto;
+        max-width: 1200px;
+    }
+
+    #carouselExampleIndicators {
+        margin: 2rem auto;
+        max-width: 1200px;
     }
 
 }
