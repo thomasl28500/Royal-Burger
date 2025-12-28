@@ -1,11 +1,10 @@
 var swiper = new Swiper(".slider-wrapper", {
     spaceBetween: 30,
-    loop: true,
     grabCursor: true,
     speed: 1000,
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
