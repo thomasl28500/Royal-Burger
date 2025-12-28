@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/aroot.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/accueil.css">
@@ -106,55 +107,84 @@
                 <span class="icone"></span>
                 <h3><span class="left"></span>Votre avis compte beaucoup !<span class="right"></span></h3>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <div class="carousel-inner">
-                    <div class="card carousel-item active">
-                        <div class="img">
-                            <img src="img/avis/sarah.jpg" alt="Photo de profil Sarah">
+            <div class="swiper">
+                <div class="swiper-button-prev"></div>
+                <div class="slider-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="img">
+                                <img src="img/avis/sarah.jpg" alt="Photo de profil Sarah">
+                            </div>
+                            <div class="etoiles">
+                                <div class="1 plein"></div>
+                                <div class="2 plein"></div>
+                                <div class="3 plein"></div>
+                                <div class="4 plein"></div>
+                                <div class="5"></div>
+                            </div>
+                            <div class="commentaire">Produits frais, burgers gourmands et équipe sympa. Peut-être un peu plus de sauce, mais sinon top.</div>
+                            <div class="nom">Sarah D.</div>
                         </div>
-                        <div class="etoiles">4/5</div>
-                        <div class="commentaire">Produits frais, burgers gourmands et équipe sympa. Peut-être un peu plus de sauce, mais sinon top.</div>
-                        <div class="nom">Sarah D.</div>
-                    </div>
-                    <div class="card carousel-item">
-                        <div class="img">
-                            <img src="img/avis/lucas.jpg" alt="Photo de profil Lucas">
+                        <div class="card swiper-slide">
+                            <div class="img">
+                                <img src="img/avis/lucas.jpg" alt="Photo de profil Lucas">
+                            </div>
+                            <div class="etoiles">
+                                <div class="1 plein"></div>
+                                <div class="2 plein"></div>
+                                <div class="3 plein"></div>
+                                <div class="4 plein"></div>
+                                <div class="5 plein"></div>
+                            </div>
+                            <div class="commentaire">Le Chicken Crispy est une tuerie ! Poulet bien croustillant et burger très équilibré. Rien à dire.</div>
+                            <div class="nom">Lucas M.</div>
                         </div>
-                        <div class="etoiles">5/5</div>
-                        <div class="commentaire">Le Chicken Crispy est une tuerie ! Poulet bien croustillant et burger très équilibré. Rien à dire.</div>
-                        <div class="nom">Lucas M.</div>
-                    </div>
-                    <div class="card carousel-item">
-                        <div class="img">
-                            <img src="img/avis/frank.jpg" alt="Photo de profil Frank">
+                        <div class="card swiper-slide">
+                            <div class="img">
+                                <img src="img/avis/frank.jpg" alt="Photo de profil Frank">
+                            </div>
+                            <div class="etoiles">
+                                <div class="1 plein"></div>
+                                <div class="2 plein"></div>
+                                <div class="3 plein"></div>
+                                <div class="4 plein"></div>
+                                <div class="5"></div>
+                            </div>
+                            <div class="commentaire">Franchement l’un des meilleurs burgers du coin. Portions généreuses et sauces délicieuses. J’y retourne souvent.</div>
+                            <div class="nom">Frank A.</div>
                         </div>
-                        <div class="etoiles">4.5/5</div>
-                        <div class="commentaire">Franchement l’un des meilleurs burgers du coin. Portions généreuses et sauces délicieuses. J’y retourne souvent.</div>
-                        <div class="nom">Frank A.</div>
-                    </div>
-                    <div class="card carousel-item">
-                        <div class="img">
-                            <img src="img/avis/sofia.jpg" alt="Photo de profil Sofia">
+                        <div class="card swiper-slide">
+                            <div class="img">
+                                <img src="img/avis/sofia.jpg" alt="Photo de profil Sofia">
+                            </div>
+                            <div class="etoiles">
+                                <div class="1 plein"></div>
+                                <div class="2 plein"></div>
+                                <div class="3 plein"></div>
+                                <div class="4 plein"></div>
+                                <div class="5 demi"></div>
+                            </div>
+                            <div class="commentaire">Super découverte ! Le Bacon Cheese est incroyable, cuisson parfaite et bacon bien croustillant. Service rapide.</div>
+                            <div class="nom">Sofia L.</div>
                         </div>
-                        <div class="etoiles">4.5/5</div>
-                        <div class="commentaire">Super découverte ! Le Bacon Cheese est incroyable, cuisson parfaite et bacon bien croustillant. Service rapide.</div>
-                        <div class="nom">Sofia L.</div>
+                        <div class="card swiper-slide">
+                            <div class="img">
+                                <img src="img/avis/clara.jpg" alt="Photo de profil Clara">
+                            </div>
+                            <div class="etoiles">
+                                <div class="1 plein"></div>
+                                <div class="2 plein"></div>
+                                <div class="3 plein"></div>
+                                <div class="4 plein"></div>
+                                <div class="5 demi"></div>
+                            </div>
+                            <div class="commentaire">Mes parents m’ont emmenée manger chez Royal Burger et j’ai adoré ! Le burger était trop bon et les frites aussi 😊</div>
+                            <div class="nom">Clara V.</div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -163,6 +193,8 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="Scripts/swiper.js"></script>
 </body>
 
 </html>

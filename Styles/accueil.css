@@ -141,42 +141,132 @@
     font-size: .8rem;
     overflow: hidden;
     display: -webkit-box;
+    line-clamp: 4;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
-#carouselExampleIndicators {
-    margin: 2rem;
-    padding-bottom: 1rem;
+.slider-wrapper {
+    margin: 2rem 3rem 1rem;
+    overflow: hidden;
 }
 
-#carouselExampleIndicators .card {
+.slider-wrapper .card {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     background-color: var(--grisFonce);
     color: var(--blanc);
     padding: 2rem;
+    min-height: 340px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
 }
 
-#carouselExampleIndicators .card .img {
+.slider-wrapper .card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    height: 0;
+    width: 0;
+    border-top: 70px solid var(--grisFonce);
+    border-right: 100px solid transparent;
+}
+
+.slider-wrapper .card .img {
     text-align: center;
+    position: absolute;
+    top: -80px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#carouselExampleIndicators .card img {
+.slider-wrapper .card .etoiles {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-wrapper .card .etoiles .plein {
+    background-image: url('../img/etoile-pleine.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.slider-wrapper .card .etoiles .demi {
+    background-image: url('../img/demi-etoile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.slider-wrapper .card:nth-child(odd) .plein, .slider-wrapper .card:nth-child(odd) .demi {
+    filter: invert(33%) sepia(25%) saturate(5560%) hue-rotate(339deg) brightness(110%) contrast(100%);
+}
+
+.slider-wrapper .card:nth-child(even) .plein, .slider-wrapper .card:nth-child(even) .demi {
+    filter: invert(87%) sepia(38%) saturate(893%) hue-rotate(331deg) brightness(101%) contrast(96%);
+}
+
+.slider-wrapper .card .commentaire {
+    flex-grow: 1;
+    text-align: center;
+    align-content: center;
+}
+
+.slider-wrapper .card .nom {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.slider-wrapper .card:nth-child(odd) .nom {
+    color: var(--jaune);
+}
+
+.slider-wrapper .card:nth-child(even) .nom {
+    color: var(--rouge);
+}
+
+.slider-wrapper .card img {
     width: 200px;
     border-radius: 6rem;
 }
 
-#carouselExampleIndicators .card:nth-child(odd) img {
+.slider-wrapper .card:nth-child(odd) img {
     border: 4px solid var(--jaune);
 }
 
-#carouselExampleIndicators .card:nth-child(even) img {
+.slider-wrapper .card:nth-child(even) img {
     border: 4px solid var(--rouge);
+}
+
+.swiper-button-next {
+    height: 30px;
+    right: -6px !important;
+}
+
+.swiper-button-prev {
+    height: 30px;
+    left: -6px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--jaune);
 }
 
 /* RESPONSIVE */
 
 @media screen and (min-width: 576px) {
+
+    .slider-wrapper {
+        margin: 2rem 3rem;
+    }
 
     .selection .liste {
         display: grid;
@@ -219,6 +309,19 @@
 
 @media screen and (min-width: 992px) {
     
+    .slider-wrapper .card::after {
+    bottom: -60px;
+    }
+
+    .slider-wrapper .card {
+        min-height: 365px;
+    }
+
+    .slider-wrapper {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .selection .liste .card.new::after {
         left: initial;
         top: initial;
@@ -270,14 +373,26 @@
 
 @media screen and (min-width: 1300px) {
 
+    .slider-wrapper .card {
+        min-height: 340px;
+    }
+
     .selection .liste {
         margin: 2rem auto;
         max-width: 1200px;
     }
 
-    #carouselExampleIndicators {
+    .slider-wrapper {
         margin: 2rem auto;
         max-width: 1200px;
+    }
+
+    .swiper {
+        max-width: 1300px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        height: var(--swiper-navigation-size);
     }
 
 }
