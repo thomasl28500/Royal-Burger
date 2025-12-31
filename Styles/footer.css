@@ -1,0 +1,145 @@
+#zoneBas {
+    background-color: var(--grisFonce);
+}
+
+.partenaires {
+    margin-top: 2rem;
+    padding: .5rem 0px;
+    background-color: var(--jaune);
+}
+
+.partenaires .bandeau {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.partenaires .bandeau img {
+    max-width: 40px;
+    filter: invert(11%) sepia(11%) saturate(721%) hue-rotate(169deg) brightness(92%) contrast(90%);
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.logo-footer .logo {
+    max-width: 250px;
+}
+
+.footer {
+    margin: 0 2rem;
+}
+
+.footer > div {
+    margin-bottom: 1rem;
+}
+
+.footer h6 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.2rem;
+}
+
+.footer h6::after {
+    content: '';
+    display: block;
+    background-color: var(--rouge);
+    width: 7rem;
+    height: .1rem;
+    margin-top: .2rem;
+}
+
+.plan-de-site a {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+.plan-de-site a:hover {
+    color: var(--rouge);
+}
+
+.plan-de-site .link, .nous-trouver .detail {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.nous-trouver .telephone {
+    display: flex;
+    gap: .5ch;
+    align-items: center;
+}
+
+.nous-trouver .adresse {
+    padding-left: 1.7rem;
+    background-image: url(../img/localisation.png);
+    background-size: 30px;
+    background-position: -4px 0px;
+    background-repeat: no-repeat;
+}
+
+.nous-trouver .reseaux a {
+    display: inline-block;
+    height: 100%;
+}
+
+.liens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.liens a {
+    color: var(--jaune);
+    text-decoration: none;
+}
+
+.liens a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 1rem 2rem;
+    }
+
+    .logo-footer .logo {
+        object-position: -24px center;
+        text-align: initial;
+    }
+
+    .footer > div {
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .liens {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    
+    .footer {
+        margin: 2rem;
+    }
+
+    .footer > div {
+        flex-basis: 24%;
+    }
+
+}

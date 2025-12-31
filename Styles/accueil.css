@@ -260,23 +260,6 @@
     background-color: var(--jaune);
 }
 
-.partenaires {
-    background-color: var(--grisFonce);
-    margin-top: 2rem;
-    padding: .5rem 0px;
-}
-
-.partenaires .bandeau {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.partenaires .bandeau img {
-    max-width: 40px;
-    filter: invert(87%) sepia(38%) saturate(893%) hue-rotate(331deg) brightness(101%) contrast(96%);
-}
-
 /* RESPONSIVE */
 
 @media screen and (min-width: 576px) {

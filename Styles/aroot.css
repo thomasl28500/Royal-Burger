@@ -4,6 +4,9 @@
     --gris: #292e33;
     --grisFonce: #202428;
     --blanc: #fff;
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 * {
@@ -15,6 +18,16 @@
 
 body {
     background-color: var(--gris);
+    position: relative;
+}
+
+.scrollToTheTop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--rouge);
+    border-radius: 0.7rem;
+    margin: 1rem;
 }
 
 #zoneHaut {
