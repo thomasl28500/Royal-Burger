@@ -9,6 +9,12 @@
     scroll-padding-top: 5rem;
 }
 
+.royal-burger {
+    color: var(--jaune);
+    text-decoration: underline;
+    text-decoration-color: var(--rouge);
+}
+
 * {
     color: var(--blanc);
     font-family: "Rowdies", sans-serif;
