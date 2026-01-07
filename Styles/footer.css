@@ -55,6 +55,10 @@
     text-decoration: none;
 }
 
+.plan-de-site a.active {
+    color: var(--jaune);
+}
+
 .plan-de-site a:hover {
     color: var(--rouge);
 }

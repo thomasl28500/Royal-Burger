@@ -1,0 +1,160 @@
+.titre, .row {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+.background img {
+    width: 100%;
+    height: 210px;
+    object-position: center 0px;
+    object-fit: cover;
+}
+
+.background {
+    position: relative;
+}
+
+.titre .icone {
+    display: flex;
+    justify-content: center;
+}
+
+.titre .icone::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    background-image: url(../img/couronne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(10deg);
+}
+
+.titre h1 {
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.row iframe {
+    width: 100%;
+}
+
+.row h5 {
+    font-family: "Permanent Marker", cursive;
+    text-decoration: underline;
+}
+
+.row .adresse p {
+    padding-left: 1.7rem;
+    background-image: url(../img/localisation.png);
+    background-size: 30px;
+    background-position: -4px 0px;
+    background-repeat: no-repeat;
+}
+
+.row .telephone p {
+    display: flex;
+    gap: .5ch;
+    align-items: center;
+}
+
+.row .horaires .horloge-rouge {
+    filter: var(--rouge-filter);
+}
+
+.row .horaires .horloge-jaune {
+    filter: var(--jaune-filter);
+}
+
+.row .horaires .heure {
+    margin: 0;
+    display: flex;
+    gap: .5ch;
+    align-items: center;
+}
+
+.row .detail .designation {
+    font-size: .7rem;
+    font-style: italic;
+    color: var(--jaune);
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+
+    .titre h1 br {
+        display: none;
+    }
+    
+    .titre h1 .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 0.6rem;
+        align-items: end;
+    }
+
+    .titre h1 .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 0.6rem;
+    }
+
+    .titre h1 .left::before, .titre h1 .right::before {
+        content: '';
+        display: block;
+        background-color: var(--jaune);
+        width: 3rem;
+        height: .1rem;
+    }
+
+    .titre h1 .left::after, .titre h1 .right::after {
+        content: '';
+        display: block;
+        background-color: var(--rouge);
+        width: 6rem;
+        height: .1rem;
+        margin-bottom: .2rem;
+    }
+
+}
+
+/* fin 576px */
+
+@media screen and (min-width: 768px) {
+    
+    .titre h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+}
+
+/* fin 768px */
+
+@media screen and (min-width: 992px) {
+
+    .background img {
+        height: 430px;
+    }
+
+    .titre h1 .left::after, .titre h1 .right::after {
+        width: 10rem;
+        margin-bottom: .6rem;
+    }
+
+    .titre h1 .left::before, .titre h1 .right::before {
+        width: 5rem;
+        margin-bottom: .2rem;
+    }
+
+}
+
+/* fin 992px */

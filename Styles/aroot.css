@@ -5,6 +5,9 @@
     --grisFonce: #202428;
     --blanc: #fff;
 
+    --rouge-filter: invert(33%) sepia(25%) saturate(5560%) hue-rotate(339deg) brightness(110%) contrast(100%);
+    --jaune-filter: invert(87%) sepia(38%) saturate(893%) hue-rotate(331deg) brightness(101%) contrast(96%);
+
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
@@ -28,7 +31,8 @@ body {
 }
 
 .scrollToTheTop {
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     bottom: 0;
     right: 0;
     background-color: var(--rouge);
